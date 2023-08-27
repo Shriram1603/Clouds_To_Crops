@@ -65,7 +65,7 @@
     <div class="container">
         <h2>Crop Prediction Form</h2>
 
-        <form action="/predict" method="post">
+        <form action="/predict" method="post" >
             <label for="nitrogen">Nitrogen (N):</label>
             <input type="number" id="nitrogen" name="nitrogen" required>
         
@@ -76,16 +76,16 @@
             <input type="number" id="potassium" name="potassium" required>
         
             <label for="temperature">Temperature (°C):</label>
-            <input type="number" id="temperature" name="temperature" required>
+            <input type="number" id="temperature" name="temperature" required step="any">
         
             <label for="humidity">Humidity (%):</label>
-            <input type="number" id="humidity" name="humidity" required>
+            <input type="number" id="humidity" name="humidity" required step="any">
         
             <label for="ph">Soil pH:</label>
-            <input type="number" id="ph" name="ph" step="0.01" required>
+            <input type="number" id="ph" name="ph"  required step="any">
         
             <label for="rainfall">Rainfall (mm):</label>
-            <input type="number" id="rainfall" name="rainfall" required>
+            <input type="number" id="rainfall" name="rainfall" required step="any">
         
             <input type="submit" value="Predict Crop">
         </form>
