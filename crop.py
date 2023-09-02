@@ -33,7 +33,6 @@ res = []
 for i in y:
     if i not in res:
         res.append(i)
-
 with open('label_encoder.pkl', 'wb') as le_file:
     pickle.dump(le, le_file)
 
